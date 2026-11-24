@@ -3,102 +3,175 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy & Terms | Task Calculator</title>
+    <title>Privacy Policy &amp; Terms | Sale Tracker Analytic Pro</title>
     <style>
+        :root {
+          --bg: #f4f5f8;
+          --surface: #ffffff;
+          --text: #1f242d;
+          --muted: #5f6775;
+          --accent: #e11d48;
+          --accent-soft: #ffe4e6;
+          --border: #e5e7eb;
+        }
+        * {
+          box-sizing: border-box;
+        }
         body {
-          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
           margin: 0;
-          padding: 2rem;
-          background-color: #f9f9f9;
-          color: #333;
-          line-height: 1.6;
+          padding: 24px 16px;
+          background-color: var(--bg);
+          color: var(--text);
+          line-height: 1.65;
         }
         h1, h2, h3 {
-          color: #111;
+          color: var(--text);
+          letter-spacing: -0.01em;
         }
         section {
-          margin-bottom: 3rem;
+          margin-bottom: 2.25rem;
         }
         header {
           text-align: center;
           margin-bottom: 2rem;
+          padding-bottom: 1.25rem;
+          border-bottom: 1px solid var(--border);
+        }
+        .badge {
+          display: inline-block;
+          background: var(--accent-soft);
+          color: var(--accent);
+          font-size: 12px;
+          font-weight: 700;
+          padding: 4px 12px;
+          border-radius: 999px;
+          margin-bottom: 10px;
+        }
+        header h1 {
+          margin: 0 0 6px;
+          font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+        }
+        header p {
+          margin: 0 0 6px;
+          color: var(--muted);
+          font-size: 1rem;
+        }
+        header small {
+          color: var(--muted);
+          font-size: 0.85rem;
         }
         .container {
           max-width: 900px;
           margin: auto;
-          background: #fff;
-          padding: 2rem;
-          border-radius: 10px;
-          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          background: var(--surface);
+          padding: clamp(20px, 4vw, 36px);
+          border-radius: 16px;
+          border: 1px solid var(--border);
+          box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+        }
+        h2 {
+          font-size: 1.35rem;
+          margin: 0 0 12px;
+          padding-bottom: 6px;
+          border-bottom: 1px solid var(--border);
+        }
+        h3 {
+          font-size: 1.05rem;
+          margin: 18px 0 8px;
+        }
+        p {
+          margin: 0 0 12px;
+          color: var(--muted);
+        }
+        ul {
+          margin: 0 0 14px;
+          padding-left: 20px;
+          color: var(--text);
+        }
+        li {
+          margin-bottom: 6px;
+        }
+        a {
+          color: var(--accent);
+          font-weight: 600;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
         }
         footer {
           text-align: center;
           font-size: 0.9rem;
-          color: #777;
-          margin-top: 3rem;
+          color: var(--muted);
+          margin-top: 2.5rem;
+          padding-top: 1.25rem;
+          border-top: 1px solid var(--border);
         }
     </style>
 </head>
 <body>
 <div class="container">
     <header>
-        <h1>Task Calculator</h1>
-        <p>Privacy Policy and Terms & Conditions</p>
-        <small>Last Updated: October 11, 2025</small>
+        <span class="badge">Version 3.5.1</span>
+        <h1>Sale Tracker Analytic Pro</h1>
+        <p>Privacy Policy and Terms &amp; Conditions</p>
+        <small>Last Updated: November 24, 2026 · Operated by Resos Group</small>
     </header>
 
     <section id="privacy">
         <h2>Privacy Policy</h2>
         <p>
-            Task Calculator (“we,” “our,” or “us”) operates the Task Calculator mobile application (the “App”). This Privacy Policy explains how we collect, use, and protect your personal information when you use our App.
+            <strong>Resos Group</strong> (“we,” “our,” or “us”) operates the <strong>Sale Tracker Analytic Pro</strong> mobile application (the “App”). This Privacy Policy explains how we handle information when you use our App.
         </p>
 
         <h3>1. Information We Collect</h3>
         <ul>
-            <li><strong>Personal Data:</strong> such as your email address (if you sign in with Google or any account-based feature).</li>
-            <li><strong>Usage Data:</strong> information about how you use the App, including device info, OS, and app version.</li>
-            <li><strong>Local Data:</strong> tasks, reminders, and settings stored locally or synced to Firestore if enabled.</li>
+            <li><strong>Account Information:</strong> Your email address or basic profile details if you choose to sign in with Google or an account-based feature.</li>
+            <li><strong>Sales &amp; App Data:</strong> Sales entries, client/item labels, amounts, dates, preferences, and notification settings stored locally on your device or synced if backup/cloud sync is enabled.</li>
+            <li><strong>Device &amp; Usage Information:</strong> Basic diagnostic details such as device model, operating system, and app version used to keep the App stable.</li>
         </ul>
 
         <h3>2. How We Use Your Information</h3>
         <ul>
-            <li>Provide and maintain the App’s features.</li>
-            <li>Sync and store data securely in Google Firebase/Firestore.</li>
-            <li>Send reminders or notifications if enabled.</li>
-            <li>Improve performance and user experience.</li>
+            <li>Provide core sales tracking, analytics, search, and monthly PDF report features.</li>
+            <li>Back up, restore, or sync records when you use account or cloud backup features.</li>
+            <li>Deliver scheduled reminders (such as daily sales check-ins), milestone alerts, and report notices when enabled.</li>
+            <li>Fix bugs, improve reliability, and maintain performance.</li>
         </ul>
 
-        <h3>3. Data Security</h3>
+        <h3>3. Data Storage &amp; Security</h3>
         <p>
-            All user data is securely stored in Google Firebase/Firestore and protected by Google’s cloud infrastructure. We do not sell or share personal data with third parties.
+            Sales records and app preferences are stored locally on your device and, where enabled, transmitted to and stored on cloud services such as Google Firebase/Firestore using standard transport and cloud protections. We do not sell your personal data to third parties.
         </p>
 
-        <h3>4. Data Retention</h3>
+        <h3>4. Data Retention &amp; Deletion</h3>
         <p>
-            We retain data only as long as necessary to provide services. You can request data deletion anytime by contacting us at <a href="mailto:support@taskcalculator.app">support@taskcalculator.app</a>.
+            Data remains on your device until you delete entries, clear app data, or uninstall the App, and in cloud backups until removed by you or upon request. To request account or cloud data assistance, contact us at <a href="mailto:support@resosgroup.example">support@resosgroup.example</a>.
         </p>
 
         <h3>5. Children’s Privacy</h3>
         <p>
-            The App is not intended for users under 13 years old. We do not knowingly collect information from children.
+            The App is not intended for users under 13 years old, and we do not knowingly collect personal information from children under 13.
         </p>
 
-        <h3>6. Your Rights</h3>
+        <h3>6. Your Choices &amp; Rights</h3>
         <ul>
-            <li>Access or correct your data</li>
-            <li>Request account or data deletion</li>
-            <li>Withdraw permissions such as notifications</li>
+            <li>Review, edit, or delete your sales entries and trash records within the App.</li>
+            <li>Enable or disable notifications and reminders in your device or App settings.</li>
+            <li>Sign out or request deletion of cloud-backed data where applicable.</li>
         </ul>
 
         <h3>7. Changes to This Policy</h3>
         <p>
-            We may update this Privacy Policy periodically. Updates will appear in the App or on our website.
+            We may update this Privacy Policy from time to time. Any updates will be published on this page or within the App with a revised “Last Updated” date.
         </p>
 
         <h3>8. Contact Us</h3>
         <p>
-            📧 Email: <a href="mailto:support@taskcalculator.app">support@taskcalculator.app</a><br/>
-            🌐 Website: <a href="https://taskcalculator.app">https://taskcalculator.app</a>
+            <strong>Developer:</strong> Resos Group<br/>
+            <strong>Email:</strong> <a href="mailto:support@resosgroup.example">support@resosgroup.example</a><br/>
+            <strong>Website:</strong> <a href="https://resosgroup.example">https://resosgroup.example</a>
         </p>
     </section>
 
@@ -106,36 +179,43 @@
         <h2>Terms and Conditions</h2>
 
         <h3>1. Acceptance of Terms</h3>
-        <p>By downloading or using the Task Calculator app, you agree to these Terms and Conditions.</p>
+        <p>
+            By downloading, installing, or using <strong>Sale Tracker Analytic Pro</strong>, you agree to be bound by these Terms and Conditions.
+        </p>
 
         <h3>2. Use of the App</h3>
         <p>
-            You agree to use the App only for lawful purposes. You are responsible for the accuracy of all data you enter.
+            You agree to use the App only for lawful purposes. You are solely responsible for the accuracy, completeness, and legality of all sales figures, records, and reports you enter or export.
         </p>
 
         <h3>3. Intellectual Property</h3>
         <p>
-            All content, design, and code of the App are owned by the developer. You may not copy, modify, or distribute the App without written permission.
+            All software code, design elements, branding, and visual assets in the App are the property of <strong>Resos Group</strong> or its licensors. You may not copy, reverse engineer, republish, or distribute the App except as permitted by law or written permission.
         </p>
 
-        <h3>4. Limitation of Liability</h3>
+        <h3>4. Analytics &amp; Reports Disclaimer</h3>
         <p>
-            We are not responsible for any loss, damage, or inconvenience caused by use or inability to use the App.
+            Totals, averages, comparisons, and generated PDF reports are provided for informational and record-keeping convenience based on your inputs and should be independently verified for accounting, tax, or business decisions.
         </p>
 
-        <h3>5. Modifications</h3>
+        <h3>5. Limitation of Liability</h3>
         <p>
-            We reserve the right to modify these Terms anytime. Changes will be posted within the App or on our website.
+            To the fullest extent permitted by applicable law, <strong>Resos Group</strong> is not liable for any indirect, incidental, or consequential damages, or any loss of data or revenue arising from your use of or inability to use the App.
         </p>
 
-        <h3>6. Governing Law</h3>
+        <h3>6. Modifications</h3>
         <p>
-            These Terms are governed by the laws of your country of residence.
+            We may update features or modify these Terms at any time. Continued use of the App after changes take effect constitutes acceptance of the updated Terms.
+        </p>
+
+        <h3>7. Governing Law</h3>
+        <p>
+            These Terms are governed by the laws applicable in your jurisdiction of residence, without regard to conflict-of-law principles.
         </p>
     </section>
 
     <footer>
-        &copy; 2025 Task Calculator. All Rights Reserved.
+        &copy; 2026 Sale Tracker Analytic Pro · Resos Group. All Rights Reserved.
     </footer>
 </div>
 </body>
